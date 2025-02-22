@@ -12,7 +12,7 @@ export const TabsData: Tab[] = [
       title: "Transform your AI interactions.",
       description:
         "Learn advanced prompt engineering techniques that help you get more accurate, relevant, and useful responses from AI models. Master the art of clear communication with AI.",
-      buttonText: "Start Learning",
+      buttonText: "Get Started Now",
       imageSrc: "/hero/one.jpg",
       imageAlt: "AI interaction visualization",
     },
@@ -26,7 +26,7 @@ export const TabsData: Tab[] = [
       title: "Craft prompts that deliver.",
       description:
         "Discover proven frameworks for structuring your prompts, including step-by-step reasoning, few-shot learning, and chain-of-thought prompting. Get the outputs you need every time.",
-      buttonText: "View Methods",
+      buttonText: "Get Started Now",
       imageSrc: "/hero/two.jpg",
       imageAlt: "Prompt structure diagram",
     },
@@ -40,7 +40,7 @@ export const TabsData: Tab[] = [
       title: "Master AI collaboration.",
       description:
         "Take control of your AI interactions with advanced techniques like role prompting, format specification, and temperature optimization. Turn AI into your most powerful tool.",
-      buttonText: "Explore Tools",
+      buttonText: "Get Started Now",
       imageSrc: "/hero/three.jpg",
       imageAlt: "AI control interface",
     },
