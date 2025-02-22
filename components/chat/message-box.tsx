@@ -1,8 +1,11 @@
 import { Bot, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Message } from "@/types/chat";
+import { memo } from "react";
 
-const MessageBox = ({ message }: { message: Message }) => {
+const MessageBoxComponent = ({ message }: { message: Message }) => {
+  const date = new Date(message.timestamp);
+
   return (
     <div
       className={`flex gap-3 ${
@@ -24,7 +27,9 @@ const MessageBox = ({ message }: { message: Message }) => {
             : "bg-secondary text-secondary-foreground rounded-bl-sm"
         }`}
       >
-        <p className="text-sm text-wrap">{message.response}</p>
+        <p className="text-sm break-words">
+          {message.sender === "bot" ? message.response : message.prompt}
+        </p>
         <p
           className={`text-xs mt-2 ${
             message.sender === "user"
@@ -32,7 +37,7 @@ const MessageBox = ({ message }: { message: Message }) => {
               : "text-secondary-foreground/70"
           }`}
         >
-          {message.timestamp}
+          {date.toLocaleTimeString()}
         </p>
       </div>
       {message.sender === "user" && (
@@ -46,5 +51,7 @@ const MessageBox = ({ message }: { message: Message }) => {
     </div>
   );
 };
+
+const MessageBox = memo(MessageBoxComponent);
 
 export default MessageBox;

@@ -11,6 +11,7 @@ const Hero = ({
   description = "Unlock endless possibilities with AI-powered prompt generation.",
   tabs,
 }: ContentProps) => {
+  // Tabs States
   const [activeTab, setActiveTab] = useState(
     tabs && tabs.length > 0 ? tabs[0].value : "",
   );
@@ -28,11 +29,13 @@ const Hero = ({
           <p className="text-lg text-muted-foreground">{description}</p>
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
+          {/* Tabs Component */}
           <TabsHeader
             tabs={tabs!}
             activeTab={activeTab}
             onTabChange={setActiveTab}
           />
+          {/* Tabs Content Render Component */}
           <TabsContentArea tabs={tabs!} activeTab={activeTab} />
         </Tabs>
       </div>

@@ -45,7 +45,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Desktop Call to Action */}
         <div className="hidden md:flex items-center space-x-4">
           <Button
             variant="outline"

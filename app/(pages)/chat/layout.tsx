@@ -1,4 +1,3 @@
-// app/chat/layout.tsx
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -22,7 +21,6 @@ export default function ChatLayout({
         </div>
         <ScrollArea className="flex-1">
           <div className="p-2">
-            {/* Chat list items can be rendered here */}
             <div className="p-3 rounded-lg cursor-pointer transition-colors hover:bg-accent/50">
               <div className="flex justify-between items-center">
                 <span className="text-sm font-medium truncate">Main Chat</span>
@@ -36,7 +34,7 @@ export default function ChatLayout({
         </ScrollArea>
       </div>
 
-      {/* Main Content */}
+      {/* Content */}
       <div className="flex-1">{children}</div>
     </div>
   );
