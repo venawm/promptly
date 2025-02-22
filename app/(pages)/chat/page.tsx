@@ -1,7 +1,7 @@
-import ChatArea from "@/components/layout/chat/chat-area";
+import { redirect } from "next/navigation";
 
-const Chat = () => {
-  return <ChatArea />;
+const Page = () => {
+  redirect("/chat/1");
 };
 
-export default Chat;
+export default Page;

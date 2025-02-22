@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import MessageBox from "@/components/chat/message-box";
-import { Message } from "@/types/chat";
+import { Message } from "@/types/chat-types";
 import ChatInput from "@/components/chat/chat-input";
 import ModelSelector from "@/components/chat/model-selector";
 

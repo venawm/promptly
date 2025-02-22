@@ -5,3 +5,10 @@ export interface Message {
   sender: string;
   timestamp: Date;
 }
+
+export interface ChatCardTypes {
+  id: number;
+  title: string;
+  lastMessage: string;
+  time: string;
+}

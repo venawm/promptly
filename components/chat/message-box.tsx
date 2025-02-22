@@ -1,6 +1,6 @@
 import { Bot, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Message } from "@/types/chat";
+import { Message } from "@/types/chat-types";
 import { memo } from "react";
 
 const MessageBoxComponent = ({ message }: { message: Message }) => {
