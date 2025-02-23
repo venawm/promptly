@@ -18,12 +18,12 @@ const TabsHeader: React.FC<TabsHeaderProps> = ({
   return (
     <div className="w-full">
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex items-center justify-center gap-2 md:gap-8">
           {tabs.map((tab) => (
             <motion.button
               key={tab.value}
               onClick={() => onTabChange(tab.value)}
-              className={`group relative flex items-center gap-3 rounded-2xl px-3 py-2   text-sm font-medium transition-all duration-500 text-primary`}
+              className={`group relative flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium transition-all duration-500 text-primary bg-primary-foreground/60`}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

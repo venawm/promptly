@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <Hero tabs={TabsData} />
       </div>
     </>

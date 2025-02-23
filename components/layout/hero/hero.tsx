@@ -18,7 +18,7 @@ const Hero = ({
 
   return (
     <section className="py-8">
-      <div className="container mx-auto">
+      <div className="">
         <div className="flex flex-col items-center gap-4 text-center">
           <Badge variant="outline" className="px-3 py-1 text-sm">
             AI-Powered Prompt Generator
