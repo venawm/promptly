@@ -85,7 +85,7 @@ const ChatArea = () => {
 
       <div className="p-4 pt-2 bg-background">
         <div className="max-w-4xl mx-auto">
-          <div className="relative flex justify-center items-end gap-4">
+          <div className="relative flex flex-col-reverse md:flex-row justify-center items-start md:items-end gap-4">
             {/* Model Select Component */}
             <ModelSelector
               selectedModel={selectedModel}

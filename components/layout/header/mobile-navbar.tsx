@@ -59,7 +59,7 @@ const MobileNavbar = ({
           </div>
           <div className="border-t p-4 space-y-2">
             <Button variant="outline" className="w-full rounded-full" asChild>
-              <Link href="/signin">Sign In</Link>
+              <Link href="/chat">Sign In</Link>
             </Button>
             <Button className="w-full rounded-full" asChild>
               <Link href="/chat">Get Started</Link>

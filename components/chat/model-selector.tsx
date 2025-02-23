@@ -24,7 +24,7 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({
       onValueChange={onModelChange}
       disabled={disabled}
     >
-      <SelectTrigger className="w-[180px] py-[22px] rounded-xl">
+      <SelectTrigger className="w-[120px] md:w-[180px] py-[22px] rounded-xl">
         <SelectValue placeholder="Select model" />
       </SelectTrigger>
       <SelectContent>
