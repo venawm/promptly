@@ -10,6 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import ThemeToggler from "@/components/ui/toogle-button";
 
 const MobileNavbar = ({
   navItems,
@@ -32,8 +33,9 @@ const MobileNavbar = ({
       <SheetContent side="right" className="w-full sm:w-80 p-0">
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between px-4 border-b h-14">
-            <SheetTitle>
+            <SheetTitle className="flex justify-center items-center gap-2">
               <span className="font-bold text-primary">Promptly</span>
+              <ThemeToggler />
             </SheetTitle>
             <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
               <X className="h-6 w-6 text-primary" />
