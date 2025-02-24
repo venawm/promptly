@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import MobileNavbar from "./mobile-navbar";
+import ThemeToggler from "@/components/ui/toogle-button";
 
 const Navbar = () => {
   const navItems = [
@@ -48,6 +49,7 @@ const Navbar = () => {
           <Button size="sm" className="rounded-full px-6" asChild>
             <Link href="/chat">Chat Now</Link>
           </Button>
+          <ThemeToggler />
         </div>
         {/* Mobile Navigation */}
         <MobileNavbar navItems={navItems} />

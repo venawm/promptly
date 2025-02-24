@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Design Choices and UI/UX Considerations
 
-## Getting Started
+Used Shadcn for ui design and theming with black and white color theme. The black-and-white color scheme was chosen to make the website redable professional, timeless aesthetic.
 
-First, run the development server:
+## Component Structure and State Management Approach
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application is built with a modular component structure for scalability and maintainability:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ChatCard: Displays individual chat messages.
+ChatInput: Captures and processes user input.
+ChatOutput: Renders chat responses.
+MessageBox: Serves as the container for the chat history.
+For state management, we leverage React hooks (useState and useEffect) to handle dynamic updates efficiently. This approach was selected for its simplicity and effectiveness in managing the real-time nature of a chat application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Challenges
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A key challenge was ensuring instant updates in the chat UI while maintaining performance. We tackled this by optimizing state updates to reduce unnecessary re-renders.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Potemtial Feature can be providing the option to select model to use that prompt.
